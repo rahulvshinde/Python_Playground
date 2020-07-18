@@ -1,0 +1,47 @@
+log parsing
+REST API
+text processing
+recursion
+HTTP requests
+1 pretty basic scripting, 2 log processing , and 1 network.
+Questions on file-system traversal, log processing and APIs.
+
+Write code to parse generic web logs and format it in different ways
+First was a fizz buzz type question. Second and third were both log parsing
+
+Last one was involved in Linkedin RESTful api calling and recursion
+
+fizz buzz, export to CSV, pull some stuff out of logs and count it.
+
+Take part of a log file, export to CSV
+
+wanted me to solve a pretty messy problem processing a spreadsheet input with an online algorithm in python to print a set of tables using maps it in linear time,.
+
+
+How do you write a regular expression for some silly pattern in Python
+
+Write a program which prints out all numbers between 1 and 100. When the program would print out a number exactly divisible by 4, print "Linked" instead. When it would print out a number exactly divisible by 6, print "In" instead. When it would print out a number exactly divisible by both 4 and 6, print "LinkedIn."
+
+Parse a log except, providing a csv of the count of each proc per DTTM.
+
+
+
+
+regular expression
+recursion
+tree
+api call
+
+
+
+
+https://github.com/bourneagain/pythonBytes/blob/master/linkedin_test
+
+https://github.com/butcallmeJo/algorithms-interviews/blob/master/api_get_employees.py
+
+https://repl.it/@swagh/linkedin04122017py
+
+https://yumminhuang.github.io/note/sreinterview/
+
+https://gist.github.com/nerd0/52b2481026ef42dc5e82
+

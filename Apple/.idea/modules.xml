@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Apple.iml" filepath="$PROJECT_DIR$/.idea/Apple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python3-Bootcamp/.idea/Python3-Bootcamp.iml" filepath="$PROJECT_DIR$/../Python3-Bootcamp/.idea/Python3-Bootcamp.iml" />
+    </modules>
+  </component>
+</project>
