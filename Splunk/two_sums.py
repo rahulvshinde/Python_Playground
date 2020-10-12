@@ -19,6 +19,7 @@ def twoSum(nums, target):
             return [mydict[num], i]
         else:
             mydict[target - num] = i
+print(twoSum([2, 7, 11, 15], 9))
 
 
 def twoSum1(nums, target):
@@ -28,3 +29,4 @@ def twoSum1(nums, target):
             return [myhash[target-num],idx]
         myhash[num] = idx
 print(twoSum1([2, 7, 11, 15], 9))
+

@@ -13,10 +13,19 @@ Your algorithm should run in linear runtime complexity. Could you implement it u
 space complexity?"""
 from functools import reduce
 
-inp = [9,6,4,2,3,5,7,0,1]
-
+# inp = [9,6,4,2,3,5,7,0,1]
+inp = [0,1]
 def missingNumber(nums):
     n = len(nums)
     return int(n * (n+1) //2 - sum(nums))
 
+def missingNumber1(nums):
+    n = len(nums)
+    nums.sort()
+    for idx, value in enumerate(nums):
+        print(idx, value)
+        if idx != value:
+            return idx
+    return nums[-1]+1
 print(missingNumber(inp))
+print(missingNumber1(inp))

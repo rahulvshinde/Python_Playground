@@ -10,6 +10,7 @@ You must do this in-place without making a copy of the array.
 Minimize the total number of operations.
 """
 
+a = [0, 1, 0, 3, 12]
 
 def moveZeros(nums):
     i = 0
@@ -19,7 +20,12 @@ def moveZeros(nums):
             i += 1
     return nums
 
-
-a = [0, 1, 0, 3, 12]
+def moveZeros1(nums):
+    for num in nums:
+        if num == 0:
+            nums.remove(num)
+            nums.append(num)
+    return nums
 
 print("Original List: {old}\nMoved Zeros: {new}".format(old=a, new=moveZeros(a)))
+print("Original List: {old}\nMoved Zeros: {new}".format(old=a, new=moveZeros1(a)))

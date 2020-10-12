@@ -44,8 +44,14 @@ def majorityElement4(nums):
                 count -= 1
     return mnum
 
+def majorityElement5(nums):
+    for key, value in collections.Counter(nums).items():
+        if value > len(nums)//2:
+            return key
+
 print(majorityElement(a))
 print(majorityElement1(a))
 print(majorityElement2(a))
 print(majorityElement3(a))
 print(majorityElement4(a))
+print(majorityElement5(a))

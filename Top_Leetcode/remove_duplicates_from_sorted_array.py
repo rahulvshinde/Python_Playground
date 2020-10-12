@@ -38,19 +38,11 @@ for (int i = 0; i < len; i++) {
 }"""
 
 import collections
-inp = [0,0,1,1,1,2,2,3,3,4]
+# inp = [0,0,1,1,1,2,2,3,3,4]
 
+inp = [1,1,2]
 def removeDups(nums):
     return len(set(nums))
-
-def removeDups1(nums):
-    dic = {}
-    cnt = 0
-    for num in nums:
-        if num not in dic:
-            cnt +=1
-            dic[num] = 1
-    return cnt
 
 def removeDups2(nums):
     prev = float("inf")
@@ -61,7 +53,23 @@ def removeDups2(nums):
         prev = num
     return cnt
 
+def removeDups1(nums):
+    dic = {}
+    cnt = 0
+    for num in nums:
+        if num not in dic:
+            cnt +=1
+            dic[num] = 1
+    return cnt
 
-print(removeDups(inp))
-print(removeDups1(inp))
-print(removeDups2(inp))
+def remove_dups2(nums):
+    myhash = collections.Counter(nums)
+    print (myhash)
+    for key, value in myhash.items():
+        if value == 1:
+            return nums[value]
+
+# print(removeDups(inp))
+# print(removeDups1(inp))
+# print(removeDups2(inp))
+print(remove_dups2(inp))
