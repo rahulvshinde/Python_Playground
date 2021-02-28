@@ -20,12 +20,12 @@ Example 3:
 Input: nums = [1,2]
 Output: [1,2]
 """
-nums = [1,3]
+nums = [3,2,3]
 from collections import Counter
 def majorityElementII(nums):
     res = []
     for key, value in Counter(nums).items():
-        if value > len(nums)//3:
+        if value > len(nums)//2:
             res.append(key)
     return res
 print(majorityElementII(nums))

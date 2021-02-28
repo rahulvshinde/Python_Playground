@@ -24,7 +24,7 @@ def palindromePermutation(a):
     for count in counter.values():
         print(count)
         if count % 2:
-            print(odd)
+            # print(odd)
             odd += 1
             if odd > 1:
                 return False
@@ -33,6 +33,10 @@ def palindromePermutation(a):
 def palindromePermutation1(a):
     return len(list(filter(lambda item:item[1]%2, collections.Counter(a).items()))) <=1
 
+def isPalindrome(s):
+    return s == s[::-1]
+
+print(isPalindrome(a))
 print(palindromePermutation(a))
 print(palindromePermutation1(a))
 

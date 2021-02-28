@@ -30,4 +30,7 @@ def addStrings(num1,num2):
     res_str = ''.join(res[::-1])
     return res_str
 
+def addStrings1(num1,num2):
+    return int(num1)+int(num2)
 print(addStrings(num1,num2))
+print(addStrings1(num1,num2))

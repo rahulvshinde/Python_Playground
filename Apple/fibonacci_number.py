@@ -35,5 +35,5 @@ def fib1(n):
     for i in range(n):
         a,b=b,a+b
     return a
-print(fib(5))
-print(fib1(4))
+print(fib(2))
+print(fib1(5))
