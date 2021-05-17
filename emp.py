@@ -10,8 +10,8 @@ def get_emp(id,depth=0):
         if not reports:
             return
         for _ in range(depth):
-            print "\t",
-            print "%s-%s"%(name,title)
+            print("\t")
+            print("%s-%s"%(name,title))
         depth+=1
         for id in reports:
             get_emp(id,depth)

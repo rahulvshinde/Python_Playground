@@ -14,17 +14,14 @@ Input: "carerac"
 Output: true"""
 import collections
 
-a = "code"
-
+a = "codedoc"
 
 def palindromePermutation(a):
     counter = collections.Counter(a)
     print(counter)
     odd = 0
     for count in counter.values():
-        print(count)
         if count % 2:
-            # print(odd)
             odd += 1
             if odd > 1:
                 return False

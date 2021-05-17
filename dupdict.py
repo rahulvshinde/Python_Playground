@@ -6,10 +6,10 @@ test_list = [{"Akash": 1}, {"Kil": 2}, {"Akshat": 3}, {"Kil": 2}, {"Akshat": 3}]
 uni_list = []
 for i in range(len(test_list)):
     if test_list[i] not in test_list[i + 1:]:
-        print(test_list[i + 1:])
+        # print(test_list[i + 1:])
         uni_list.append(test_list[i])
 
-# print(uni_list)
+print(uni_list)
 
 seen = set()
 new_l = []

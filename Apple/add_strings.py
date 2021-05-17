@@ -32,5 +32,6 @@ def addStrings(num1,num2):
 
 def addStrings1(num1,num2):
     return int(num1)+int(num2)
-print(addStrings(num1,num2))
-print(addStrings1(num1,num2))
+
+# print(addStrings(num1,num2))
+# print(addStrings1(num1,num2))

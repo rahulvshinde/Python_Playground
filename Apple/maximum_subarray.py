@@ -24,3 +24,15 @@ def maxSubarray(nums,):
     return maxSum
 
 print(maxSubarray(a))
+#
+# def maxSubarrayFixedSize(nums,subsize):
+#     if not nums:
+#         return 0
+#     curSum = maxSum = nums[0]
+#     for num in nums[1:]:
+#
+#
+#
+# print(maxSubarrayFixedSize(a, 2))
+
+

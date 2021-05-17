@@ -10,13 +10,11 @@ from collections import Counter
 
 
 def log_parser(lfile):
-    myreg = r'\d{1,3}\.\d{1,3}.\d{1,3}.\d{1,3}'
-    with open(lfile) as file:
+    myreg = r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}'
+    with open(lfile, 'r') as file:
         log = file.read()
-        ips = re.search(myreg, log)
+        ips = re.findall(myreg, log)
         ipcount = Counter(ips)
         for item, value in ipcount.items():
             print("IP Addr: {} ----> Count: {}".format(item, value))
-
-
-print(log_parser("access.log"))
+log_parser("access.log")

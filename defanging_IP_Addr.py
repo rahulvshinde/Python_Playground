@@ -13,26 +13,30 @@
 # Output: "255[.]100[.]50[.]0"
 # """
 #
-# import re
-# ipstr="1.1.1.1"
-# def defangIPAddr(ipstr):
-#     return ipstr.replace('.', '[.]')
-#
-# def defangIPAddr1(ipstr):
-#     return '[.]'.join(ipstr.split('.'))
-#
-# def defangIPAddr2(ipstr):
-#     return re.sub('\.','[.]', ipstr)
-#
-# def defangIPAddr3(ipstr):
-#     if i in ipstr:
-#         if i == ".":
-#             print(i)
-#
+import re
+ipstr="1.1.1.1"
+def defangIPAddr(ipstr):
+    return ipstr.replace('.', '[.]')
+
+def defangIPAddr1(ipstr):
+    return '[.]'.join(ipstr.split('.'))
+
+def defangIPAddr2(ipstr):
+    return re.sub('\.','[.]', ipstr)
+
+def defangIPAddr3(ipstr):
+    x =""
+    for i in ipstr:
+        if i == ".":
+            x +="[.]"
+        else:
+            x +=i
+    return x
+
 # print("Original IP Addr: {} \nDefanged IP Addr: {}".format(ipstr, defangIPAddr(ipstr)))
 # print("Original IP Addr: {} \nDefanged IP Addr: {}".format(ipstr, defangIPAddr1(ipstr)))
-# print("Original IP Addr: {} \nDefanged IP Addr: {}".format(ipstr, defangIPAddr2(ipstr)))
-# print("Original IP Addr: {} \nDefanged IP Addr: {}".format(ipstr, defangIPAddr3(ipstr)))
+print("Original IP Addr: {} \nDefanged IP Addr: {}".format(ipstr, defangIPAddr2(ipstr)))
+print("Original IP Addr: {} \nDefanged IP Addr: {}".format(ipstr, defangIPAddr3(ipstr)))
 
 
 
